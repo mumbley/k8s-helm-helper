@@ -1,7 +1,7 @@
 FROM bash:4
 RUN apk --no-cache add gettext ca-certificates openssl jq \
     && wget https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 -O /usr/local/bin/dumb-init \
-    && wget https://storage.googleapis.com/kubernetes-release/release/v1.10.0/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
+    && wget https://storage.googleapis.com/kubernetes-release/release/v1.15.0/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
     && wget https://storage.googleapis.com/kubernetes-helm/helm-v2.11.0-linux-amd64.tar.gz -O /tmp/helm.tar.gz \
     && cd /tmp \
     && tar xzvf helm.tar.gz \
