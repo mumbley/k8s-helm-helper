@@ -1,4 +1,4 @@
-# k8s-helper
+# k8s-helm-helper
 Container running Kubernetes `kubectl` and `helm` clients.  Useful for CI deployment tasks into Kubernetes
 The build also includes `jamal`. A tool for converting json to yaml and yaml to json, AWS client and `git`.
 
