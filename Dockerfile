@@ -10,7 +10,7 @@ RUN apk --no-cache add gettext ca-certificates openssl jq \
     && tar xzvf jamal.tar.gz \
     && mv jamal-*/linux/amd64/jamal /usr/local/bin \
     && chmod a+x /usr/local/bin/kubectl /usr/local/bin/dumb-init /usr/local/bin/helm /usr/local/bin/jamal \
-    && apk add -qvU python py-pip git
+    && apk add -qvU python py-pip git \
     && pip install awscli
 
 ENTRYPOINT ["/usr/local/bin/dumb-init","--","/usr/local/bin/docker-entrypoint.sh"]
