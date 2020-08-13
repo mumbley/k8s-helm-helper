@@ -1,5 +1,5 @@
 FROM bash:4
-RUN apk --no-cache add gettext ca-certificates openssl python py-pip git jq \
+RUN apk --update --no-cache add gettext ca-certificates openssl py-pip git jq \
     && wget https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 -O /usr/local/bin/dumb-init \
     && wget https://storage.googleapis.com/kubernetes-release/release/v1.16.11/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
     && wget https://storage.googleapis.com/kubernetes-helm/helm-v2.11.0-linux-amd64.tar.gz -O /tmp/helm.tar.gz \
