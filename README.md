@@ -9,5 +9,10 @@ at the link below for details on how to configure IAM.
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html
 
 The helper is fixed at `helm` version `2.11.0`.
-
 `kubectl` cli is fixed at version `1.16.3`.
+
+There are two versions of `helm` installed.
+
+Version `v2.11.0` is installed at `/usr/local/bin/helm`
+Version `v3.4.1` is installed at `/usr/local/bin/helm3`
+
